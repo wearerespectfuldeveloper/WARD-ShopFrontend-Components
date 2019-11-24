@@ -1,0 +1,64 @@
+// elevation 은 클래스으로 구현됩니다. 전역으로 등록되며 어디서든 끌어와서 사용할 수 있습니다.
+
+.elevation-1 {
+  box-shadow: 
+  0px 0.5px 3.35px rgba(0, 0, 0, 0.14),
+  0px 1px 1.5px rgba(0, 0, 0, 0.032),
+  0px 2.3px 2px rgba(0, 0, 0, 0.06);
+}
+
+.elevation-2 {
+  box-shadow: 
+  0px 0.8px 3.7px -0.33px rgba(0, 0, 0, 0.14),
+  0px 2px 3px 0.15px rgba(0, 0, 0, 0.034),
+  0px 2.6px 4px -0.2px rgba(0, 0, 0, 0.06);
+}
+
+.elevation-3 {
+  box-shadow: 
+  0px 1.1px 4.05px -0.66px rgba(0, 0, 0, 0.14),
+  0px 3px 4.5px 0.3px rgba(0, 0, 0, 0.036),
+  0px 2.9px 6px 0.2px rgba(0, 0, 0, 0.06)
+}
+
+.elevation-4 {
+  box-shadow: 
+  0px 1.4px 4.4px -0.99px rgba(0, 0, 0, 0.14),
+  0px 4px 6px 0.45px rgba(0, 0, 0, 0.038),
+  0px 3.2px 8px 0.6px rgba(0, 0, 0, 0.06)
+}
+
+.elevation-5 {
+  box-shadow: 
+  0px 2px 5.1px -1.65px rgba(0, 0, 0, 0.14),
+  0px 6px 9px 0.75px rgba(0, 0, 0, 0.042),
+  0px 3.8px 12px 1.4px rgba(0, 0, 0, 0.06)
+}
+
+.elevation-6 {
+  box-shadow: 
+  0px 2.6px 5.8px -2.31px rgba(0, 0, 0, 0.14),
+  0px 8px 12px 1.05px rgba(0, 0, 0, 0.046),
+  0px 4.4px 16px 2.2px rgba(0, 0, 0, 0.06);
+}
+
+.elevation-7 {
+  box-shadow: 
+  0px 3.5px 6.85px -3.3px rgba(0, 0, 0, 0.14),
+  0px 11px 16.5px 1.5px rgba(0, 0, 0, 0.052),
+  0px 5.3px 22px 3.4px rgba(0, 0, 0, 0.06);
+}
+
+.elevation-8 {
+  box-shadow: 
+  0px 4.7px 8.25px -4.62px rgba(0, 0, 0, 0.14),
+  0px 15px 22.5px 2.1px rgba(0, 0, 0, 0.06),
+  0px 6.5px 30px 5px rgba(0, 0, 0, 0.06);
+}
+
+.elevation-9 {
+  box-shadow: 
+  0px 7.4px 11.4px -7.59px rgba(0, 0, 0, 0.14),
+  0px 24px 36px 3.45px rgba(0, 0, 0, 0.078),
+  0px 9.2px 48px 8.6px rgba(0, 0, 0, 0.06);
+}
