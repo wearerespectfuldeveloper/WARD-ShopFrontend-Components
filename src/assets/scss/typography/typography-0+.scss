@@ -1,0 +1,140 @@
+// design tokens 는 전부 전역 클래스로 적용됩니다.\
+
+.font--display1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 36px;
+  color: #09101D;
+}
+
+.font--f1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  color: #09101D;
+} 
+
+.font--f2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 29px;
+  line-height: 32px;
+  color: #09101D;
+}
+
+.font--f3 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #09101D;
+}
+
+.font--f4 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22.5px;
+  line-height: 28px;
+  color: #09101D;
+}
+
+.font--f5 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #09101D;
+}
+
+.font--base {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #545D69;
+}
+
+.font--base-semibold {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #545D69;
+}
+
+.font--small {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14.4px;
+  line-height: 150%;
+  color: #545D69;
+}
+
+.font--small-caps {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.4px;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #545D69;
+}
+
+.font--link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #545D69;
+}
+
+.font--base-m {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #545D69;
+}
+
+.font---base--semi-m {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #545D69;
+}
+
+.font--small-m {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14.4px;
+  line-height: 150%;
+  color: #545D69;
+}
+
+.font---small--caps-m {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.4px;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #545D69;
+}
