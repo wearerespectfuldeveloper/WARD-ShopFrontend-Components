@@ -1,10 +1,17 @@
 <template>
-  <div class="divider"></div>
+  <div class="divider"
+    :style="{'marginRight': margin, 'marginLeft': margin}"
+  ></div>
 </template>
 
 <script>
 export default {
-  
+  props: {
+    margin: {
+      type: String,
+      default: ''
+    }
+  }
 }
 </script>
 

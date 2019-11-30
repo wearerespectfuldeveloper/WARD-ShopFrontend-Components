@@ -16,7 +16,6 @@
         {{button_text}}
       </button>
     </div>
-    
   </div>
 </template>
 

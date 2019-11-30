@@ -46,7 +46,7 @@ import NavigationDrawer from '@/components/blocks/navigation_drawer.vue';
 
 storiesOf('Components/Units', module)
   .addDecorator(withKnobs)
-  
+
 
 storiesOf('Components/Blocks', module)
   .addDecorator(withKnobs)
@@ -128,7 +128,6 @@ storiesOf('Components/Blocks', module)
       :title="title"
       :text="text"
       :button_text="button_text"
-
     >
     </card-with-image>`,
   }),{
@@ -136,7 +135,10 @@ storiesOf('Components/Blocks', module)
   })
   .add('Navigation Drawer', () => ({
     components: { NavigationDrawer },
-    template: `<navigation-drawer></navigation-drawer>`,
+    template: `
+    <navigation-drawer>
+    </navigation-drawer>
+    `,
   }))
   .add('Content Header', () => ({
     components: { ContentHeader },

@@ -13,7 +13,6 @@
           'height': thumnail_height
         }"
       >
-
       </div>
     </div>
     <div class="card-body">
