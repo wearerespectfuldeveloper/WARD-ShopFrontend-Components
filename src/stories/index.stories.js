@@ -8,10 +8,10 @@ import { withKnobs, text, boolean, object, array } from '@storybook/addon-knobs'
 // ----------------- MARKDOWN
 
 // 원자 마크다운
-import hero_md from '@/assets/markdown/block/hero.md'
-import card_with_image_md from '@/assets/markdown/block/card_with_image.md'
 
 // 분자 마크다운
+import hero_md from '@/assets/markdown/block/hero.md'
+import card_with_image_md from '@/assets/markdown/block/card_with_image.md'
 
 // 유기체 마크다운
 
@@ -26,6 +26,9 @@ import card_with_image_md from '@/assets/markdown/block/card_with_image.md'
 
 
 // 원자 컴포넌트
+import Divider from '@/components/units/divider.vue';
+import BasicButton from '@/components/units/basic_button.vue';
+import BasicSelectbar from '@/components/units/basic_selectbar.vue';
 
 
 // 분자 컴포넌트
@@ -33,6 +36,12 @@ import Hero from '@/components/blocks/hero.vue';
 import CardWithImage from '@/components/blocks/card_with_image.vue';
 import ContentHeader from '@/components/blocks/content_header.vue';
 import NavigationDrawer from '@/components/blocks/navigation_drawer.vue';
+import CommentBlock from '@/components/blocks/comment_block.vue';
+import ProductMainDescCard from '@/components/blocks/product_main_desc_card.vue';
+import PageNavigation from '@/components/blocks/page_navigation.vue';
+import PageHeader from '@/components/blocks/page_header.vue';
+
+
 
 
 // 유기체 컴포넌트
@@ -46,7 +55,28 @@ import NavigationDrawer from '@/components/blocks/navigation_drawer.vue';
 
 storiesOf('Components/Units', module)
   .addDecorator(withKnobs)
-
+  .add('Divider', () => ({
+    components: { Divider },
+    template: `
+    <divider>
+    </divider>
+    `,
+  }))
+  .add('Basic Button', () => ({
+    components: { BasicButton },
+    template: `
+    <basic-button>
+      클릭
+    </basic-button>
+    `,
+  }))
+  .add('Basic Selectbar', () => ({
+    components: { BasicSelectbar },
+    template: `
+    <basic-selector>
+    </basic-selector>
+    `,
+  }))
 
 storiesOf('Components/Blocks', module)
   .addDecorator(withKnobs)
@@ -144,7 +174,23 @@ storiesOf('Components/Blocks', module)
     components: { ContentHeader },
     template: `<content-header></content-header>`,
   }))
-
+  .add('Product Main Desc Card', () => ({
+    components: { ProductMainDescCard },
+    template: `<product-main-desc-card></product-main-desc-card>`,
+  }))
+  .add('Comment Block', () => ({
+    components: { CommentBlock },
+    template: `<comment-block></comment-block>`,
+  }))
+  .add('Page Navigation', () => ({
+    components: { PageNavigation },
+    template: `<page-navigation></page-navigation>`,
+  }))
+  .add('Page Header', () => ({
+    components: { PageHeader },
+    template: `<page-header></page-header>`,
+  }))
+  
 storiesOf('Components/Sections', module)
   .addDecorator(withKnobs)
 
