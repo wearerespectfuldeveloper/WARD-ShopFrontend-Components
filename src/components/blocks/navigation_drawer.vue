@@ -40,7 +40,7 @@ export default {
   props: {
     width: {
       type: String,
-      default: '300px'
+      default: '250px'
     },
     height: {
       type: String,
@@ -69,14 +69,13 @@ export default {
 
 <style lang="scss" scoped>
 .navigation-drawer {
-  position: absolute;
   background-color: $Light;
 
   .list {
     margin-bottom: 25px;
 
     .list-title {
-      padding: 16px;
+      padding: 19px;
       color: $Dark;
     }
 

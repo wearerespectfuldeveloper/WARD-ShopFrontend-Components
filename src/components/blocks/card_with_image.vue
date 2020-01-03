@@ -1,6 +1,6 @@
 <template>
   <div 
-    class="card elevation-1"
+    class="card-with-image elevation-1"
     :style="{
       'width': width,
       'border-radius': border_radius
@@ -69,18 +69,13 @@ export default {
 
 <style lang="scss" scoped>
 
-.card {
-
+.card-with-image {
   overflow: hidden;
-
   .card-header {
-
     .card-thumnail {
       background-repeat: no-repeat;
       background-size: cover;
     }
-    
-
   }
 
   .card-body {

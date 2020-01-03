@@ -19,14 +19,14 @@ export default {
   props: {
     left_items: {
       type: Array,
-      default: [
+      default: () => [
         { text: "소개", link: "#" },
         { text: "고객센터", link: "#" }
       ]
     },
     right_items: {
       type: Array,
-      default: [
+      default: () => [
         { text: "장바구니", link: "#" },
         { text: "도움말", link: "#" }
       ]
@@ -41,6 +41,7 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 
   .left {
     display: flex;

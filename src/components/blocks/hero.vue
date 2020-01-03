@@ -57,6 +57,7 @@ export default {
 
   .hero-title {
     color: $TextBlack;
+    text-align: center;
     margin-bottom: 40px;
   }
 

@@ -12,6 +12,8 @@ module.exports = {
           @import "@/assets/scss/utilities/colors.scss";
           @import "@/assets/scss/utilities/elevations.scss";
           @import "@/assets/scss/utilities/grids.scss";
+          @import "@/assets/scss/utilities/borders.scss";
+
         `
       }
     }

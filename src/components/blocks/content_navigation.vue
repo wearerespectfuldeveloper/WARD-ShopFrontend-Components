@@ -1,5 +1,5 @@
 <template>
-<ul class="page-navigation"
+<ul class="content-navigation"
     :style="{
         'width': width
     }"
@@ -34,9 +34,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page-navigation {
-    border-top: 0.5px solid $Dark;
-    border-bottom: 0.5px solid $Dark;
+.content-navigation {
+    border-top: 0.5px solid rgba($Dark, 0.75);
+    border-bottom: 0.5px solid rgba($Dark, 0.75);
     padding-top: 21px;
     padding-bottom: 21px;
     list-style: none;
