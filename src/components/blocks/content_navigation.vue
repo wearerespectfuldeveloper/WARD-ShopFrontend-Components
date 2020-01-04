@@ -1,7 +1,9 @@
 <template>
 <ul class="content-navigation"
     :style="{
-        'width': width
+        'width': width,
+        'position': position.sticky,
+        'top': position.top
     }"
 >
     <li class="navigation-item font--base-semibold"
@@ -15,6 +17,16 @@
 
 <script>
 export default {
+    computed: {
+        position () {
+            return this.is_sticky ? {sticky: 'sticky', top: '0'} : {sticky: '', top: ''}
+        }
+    },
+    mounted () {
+        console.log(this.is_sticky);
+        console.log(this.position);
+
+    },
     props: {
         width: {
             type: String,
@@ -28,6 +40,10 @@ export default {
                 { text: '스티커', link: '#' },
                 { text: '악세사리', link: '#' },
             ]
+        },
+        is_sticky: {
+            type: Boolean,
+            default: false
         }
     }
 }

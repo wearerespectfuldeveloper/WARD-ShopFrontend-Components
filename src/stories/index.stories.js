@@ -66,6 +66,10 @@ import ProductDescPage from '@/components/pages/product_desc_page.vue';
 import Layout from '@/components/layout/layout.vue';
 
 
+// 전체 어플리케이션
+import Result from '@/components/result/result.vue';
+
+
 storiesOf('Components/Units', module)
   .addDecorator(withKnobs)
   .add('Divider', () => ({
@@ -79,25 +83,25 @@ storiesOf('Components/Units', module)
     components: { BasicButton },
     template: `
     <basic-button>
-      클릭
+      장바구니
     </basic-button>
     `,
   }))
   .add('Basic Selectbar', () => ({
     components: { BasicSelectbar },
     template: `
-    <basic-selector>
-    </basic-selector>
+    <basic-selectbar>
+    </basic-selectbar>
     `,
   }))
-  .add('Toggle Button', () => ({
+  .add('Toggle Button Apps', () => ({
     components: { ToggleButtonApps },
     template: `
     <toggle-button-apps>
     </toggle-button-apps>
     `,
   }))
-  .add('Toggle Button', () => ({
+  .add('Toggle Button Menu', () => ({
     components: { ToggleButtonMenu },
     template: `
     <toggle-button-menu>
@@ -271,5 +275,12 @@ storiesOf('Components/Layout', module)
   .add('Layout', () => ({
     components: { Layout },
     template: `<layout></layout>`,
+  }))
+  
+storiesOf('Result Application', module)
+  .addDecorator(withKnobs)
+  .add('Result', () => ({
+    components: { Result },
+    template: `<result></result>`,
   }))
   

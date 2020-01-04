@@ -117,7 +117,7 @@ export default {
 }
 
 .editor > .codex-editor > .codex-editor__redactor {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   background-color: white;
   padding-top: 10px !important;
   padding-bottom: 10px !important;

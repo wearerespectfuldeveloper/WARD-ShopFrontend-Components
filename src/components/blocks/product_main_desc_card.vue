@@ -5,27 +5,25 @@
     'height': height,
   }"
 >
-  <div class="product elevation-1">
-    <div class="product-image"
+  <div class="product">
+    <!-- 아 이게 백그라운드 이미지라서 그렇군 -->
+    <img class="product-image"
+      :src="product_image_link"
       :style="{
-        'background-image': `url(${product_image})`,
         'width': image_width,
-        'height': image_height
+        'minHeight': image_height
       }"
-    >
-      
-    </div>
+    />
 
     <div class="product-info">
-      <div class="name font--f4">
-        {{product_name}}
+      <div class="info-text">
+        <div class="name font--f4">
+          {{product_name}}
+        </div>
+        <div class="desc font--f5" v-html="product_desc">
+        </div>
       </div>
-      <div class="desc font--f5" v-html="product_desc">
-      </div>
-
-      <div class="extra-feature">
-        <slot name="extra-feature"></slot>
-      </div>
+      <slot name="extra-feature"></slot>
     </div>
   </div>
   
@@ -41,7 +39,7 @@ export default {
     },
     height: {
       type: String,
-      default: ''
+      default: '800px'
     },
     image_width: {
       type: String,
@@ -49,9 +47,9 @@ export default {
     },
     image_height: {
       type: String,
-      default: '500px'
+      default: '50%'
     },
-    product_image: {
+    product_image_link: {
       type: String,
       default: 'https://images.unsplash.com/photo-1514342959091-2bffd8a7c4ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
     },
@@ -75,34 +73,53 @@ export default {
   color: $Dark;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   .product {
     display: flex;
     justify-content: center;
     width: 80%;
-    background-color: white;
 
     .product-image {
-      background-repeat: no-repeat;
-      background-size: cover;
+      
     }
 
     .product-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       width: 50%;
-      padding: 38px;
-      height: 500px;
+      padding: 10px 0px 0px 38px;
+      height: 90%;
       overflow: auto;
 
-      .name {
-        margin-bottom: 40px;
-        font-weight: bold;
+      .info-text {
+        .name {
+          margin-bottom: 40px;
+          font-weight: bold;
+        }
+
+        .desc {
+
+        }
       }
-
-      .desc {
-
-      }
-
     }
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+
+      .product-image {
+        margin-top: 30px;
+      }
+
+      .product-info {
+        margin-top: 30px;
+        width: 90%;
+        height: 50%;
+      }
+    }
+
   }
 }
   

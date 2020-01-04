@@ -8,9 +8,13 @@
 
 
 @mixin border-right {
-  border-right: 1px solid rgba($LightGrey, 0.2);
+  border-right: 1px solid rgba($LightGrey, 0.4);
 }
 
 @mixin border-left {
-  border-left: 1px solid rgba($LightGrey, 0.2);
+  border-left: 1px solid rgba($LightGrey, 0.4);
+}
+
+@mixin border-all {
+  border: 1px solid rgba($LightGrey, 0.4);
 }

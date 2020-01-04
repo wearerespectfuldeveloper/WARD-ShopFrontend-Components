@@ -3,6 +3,7 @@
     class="card-with-image elevation-1"
     :style="{
       'width': width,
+      'height': height,
       'border-radius': border_radius
     }"
   >
@@ -38,6 +39,10 @@ export default {
     width: {
       type: String,
       default: '250px'
+    },
+    height: {
+      type: String,
+      default: ''
     },
     border_radius: {
       type: String,

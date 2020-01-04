@@ -7,6 +7,9 @@
     <drawer-section
       slot="drawer"
     ></drawer-section>
+    <landing-page
+      slot="page-content"
+    ></landing-page>
   </layout-template>
 </div>
 </template>
@@ -28,6 +31,7 @@ export default {
     LayoutTemplate,
     HeaderSection,
     DrawerSection,
+    LandingPage
   }
 }
 </script>
