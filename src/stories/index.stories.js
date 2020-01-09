@@ -31,6 +31,10 @@ import BasicButton from '@/components/units/basic_button.vue';
 import BasicSelectbar from '@/components/units/basic_selectbar.vue';
 import ToggleButtonApps from '@/components/units/toggle_button_apps.vue';
 import ToggleButtonMenu from '@/components/units/toggle_button_menu.vue';
+import LoadingSpinner from '@/components/units/loading_spinner.vue';
+import LoadingDots from '@/components/units/loading_dots.vue';
+
+
 
 
 
@@ -108,6 +112,22 @@ storiesOf('Components/Units', module)
     </toggle-button-menu>
     `,
   }))
+  .add('Loading Spinner', () => ({
+    components: { LoadingSpinner },
+    template: `
+    <loading-spinner>
+    </loading-spinner>
+    `,
+  }))
+  .add('Loading Dots', () => ({
+    components: { LoadingDots },
+    template: `
+    <loading-dots>
+    </loading-dots>
+    `,
+  }))
+  
+  
   
 
 storiesOf('Components/Blocks', module)

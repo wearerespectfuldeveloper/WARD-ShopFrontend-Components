@@ -34,7 +34,7 @@ export default {
         },
         items: {
             type: Array,
-            default: [
+            default: () => [
                 { text: '티셔츠', link: 'https://www.naver.com' },
                 { text: '아우터', link: '#' },
                 { text: '스티커', link: '#' },
