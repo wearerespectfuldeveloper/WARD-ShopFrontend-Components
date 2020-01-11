@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation-drawer elevation-1"
+  <div class="page-sidebar elevation-1"
     :style="{
       'width': width,
       'height': height
@@ -27,6 +27,7 @@
         <span class="text">{{item.text}}</span>
       </li>
     </ul>
+  
   </div>
 </template>
 
@@ -40,11 +41,11 @@ export default {
   props: {
     width: {
       type: String,
-      default: '250px'
+      default: ''
     },
     height: {
       type: String,
-      default: '100%'
+      default: ''
     },
     item_lists: {
       type: Array,
@@ -63,15 +64,18 @@ export default {
         ]}
       ]
     }
+  },
+  methods: {
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.navigation-drawer {
+.page-sidebar {
   background-color: $Light;
 
   .list {
+    width: 100%;
     margin-bottom: 25px;
 
     .list-title {
@@ -105,8 +109,8 @@ export default {
       .text {
         color: $Dark;
       }
-
     }
   }
+
 }
 </style>

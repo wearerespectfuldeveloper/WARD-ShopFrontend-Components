@@ -24,7 +24,6 @@ export default {
         this.loading = true;
       }
     });
-
     this.observer.observe(this.$el);
   },
   components: {

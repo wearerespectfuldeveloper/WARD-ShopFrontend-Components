@@ -9,9 +9,7 @@
     :text="''"
     :text_align="'center'"
   ></content-header>
-  <product-main-desc-card
-    
-  >
+  <product-main-desc-card>
     <div class="extra" slot="extra-feature">
       <basic-selectbar
         :width="'100%'"
@@ -72,9 +70,14 @@ import CommentBlock from '@/components/blocks/comment_block.vue';
 import BasicButton from '@/components/units/basic_button.vue';
 import BasicSelectbar from '@/components/units/basic_selectbar.vue';
 
+// 트리거
+import intersectionObserver from '@/mixins/intersection_observer.js';
 
 
 export default {
+  mixins: [
+    intersectionObserver({targets: ['.product-main-desc-card', '.desc', '.comment'], animation: 'fade-up'}),
+  ],
   components: {
     ContentNavigation,
     ContentHeader,
@@ -100,6 +103,7 @@ export default {
   }
 
   .product-main-desc-card {
+    
     margin-bottom: 35px;
     padding-top: 40px;
     padding-bottom: 40px;

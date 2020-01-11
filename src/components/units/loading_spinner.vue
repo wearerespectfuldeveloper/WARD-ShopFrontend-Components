@@ -21,16 +21,5 @@ export default {
   margin-bottom: 10rem;
   animation: 1s spin infinite ease-in-out;
 }
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-    
-  }
-}
   
 </style>

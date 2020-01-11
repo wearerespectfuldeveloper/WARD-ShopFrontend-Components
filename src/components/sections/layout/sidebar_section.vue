@@ -1,24 +1,26 @@
 <template>
-<div class="drawer-section">
-  <navigation-drawer
-    :width="'100%'"
+<div class="sidebar-section"
+>
+  <page-sidebar
     :height="'100vh'"
-  ></navigation-drawer>
+  ></page-sidebar>
 </div>
 </template>
 
 <script>
-import NavigationDrawer from '@/components/blocks/navigation_drawer.vue';
+import PageSidebar from '@/components/blocks/page_sidebar.vue';
 
 export default {
+  
   components: {
-    NavigationDrawer
-  }
+    PageSidebar
+  },
+  
 }
 </script>
 
 <style lang="scss">
-.drawer-section {
+.sidebar-section {
   position: fixed;
   width: 300px;
 

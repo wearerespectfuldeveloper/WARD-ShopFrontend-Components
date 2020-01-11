@@ -35,16 +35,6 @@ export default {
     animation-delay: 0.30s;
   }
 
-  @keyframes bounce {
-    0%, 80%, 100% {
-      transform: scale(0);
-    }
-
-    40% {
-      transform: scale(1);
-    }
-  }
-
 }
   
 </style>

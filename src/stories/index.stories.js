@@ -42,7 +42,7 @@ import LoadingDots from '@/components/units/loading_dots.vue';
 import Hero from '@/components/blocks/hero.vue';
 import CardWithImage from '@/components/blocks/card_with_image.vue';
 import ContentHeader from '@/components/blocks/content_header.vue';
-import NavigationDrawer from '@/components/blocks/navigation_drawer.vue';
+import PageSidebar from '@/components/blocks/page_sidebar.vue';
 import CommentBlock from '@/components/blocks/comment_block.vue';
 import ProductMainDescCard from '@/components/blocks/product_main_desc_card.vue';
 import ContentNavigation from '@/components/blocks/content_navigation.vue';
@@ -61,7 +61,7 @@ import ProductDescContentSection from '@/components/sections/content/product_des
 
 // 레이아웃 섹션
 import HeaderSection from '@/components/sections/layout/header_section.vue';
-import DrawerSection from '@/components/sections/layout/drawer_section.vue';
+import SidebarSection from '@/components/sections/layout/sidebar_section.vue';
 
 
 // 페이지
@@ -215,11 +215,11 @@ storiesOf('Components/Blocks', module)
   }),{
     notes: card_with_image_md
   })
-  .add('Navigation Drawer', () => ({
-    components: { NavigationDrawer },
+  .add('Page Sidebar', () => ({
+    components: { PageSidebar },
     template: `
-    <navigation-drawer>
-    </navigation-drawer>
+    <page-sidebar>
+    </page-sidebar>
     `,
   }))
   .add('Content Header', () => ({
@@ -273,9 +273,9 @@ storiesOf('Components/Layout Sections', module)
     components: { HeaderSection },
     template: `<header-section></header-section>`,
   }))
-  .add('Drawer Section', () => ({
-    components: { DrawerSection },
-    template: `<drawer-section></drawer-section>`,
+  .add('Sidebar Section', () => ({
+    components: { SidebarSection },
+    template: `<sidebar-section></sidebar-section>`,
   }))
 
 
