@@ -1,28 +1,5 @@
 import axios from 'axios';
 
-// --------------------- util Func
-
-// function getSendingComponent (component_obj) {
-//   let new_component = {
-//     type: component_obj.type
-//   }
-  
-//   // 클라이언트에서? 아니면 클라이언트랑 서버 둘다 이 작업 해줘야 하나?
-//   if(component_obj.type === 'Header') {
-//     new_component.text = component_obj.text;
-//     new_component.level = component_obj.level;
-//   } else if (component_obj.type === 'Paragraph') {
-//     new_component.text = component_obj.text;
-//   } else if (component_obj.type === 'Image') {
-//     new_component.url = component_obj.url;
-//     new_component.caption = component_obj.caption;
-//     new_component.withBorder = component_obj.withBorder;
-//     new_component.withBackground = component_obj.withBackground;
-//     new_component.stretched = component_obj.stretched;
-//   }
-
-//   return new_component;
-// }
 
 
 export const state = () => ({
@@ -77,9 +54,8 @@ export const actions = {
   createProductDetailComponents ({ commit }, { request_url, component_obj }) {
     axios.post(`${request_url || process.env.BASE_URL}/components/create`, component_obj)
       .then(result => {
-        const created_component = result;
-        if (created_component) {
-          commit('createProductDetailComponents', { created_component });
+        if (result) {
+          commit('createProductDetailComponents', { component_obj });
         }
       })
       .catch(err => {
@@ -89,9 +65,8 @@ export const actions = {
   updateProductDetailComponent ({ commit }, { request_url, updated_component_obj }) {
     axios.put(`${request_url || process.env.BASE_URL}/products`, updated_component_obj)
       .then(result => {
-        const updated_component = result;
-        if (updated_component) {
-          commit('updateProductDetailComponent', { updated_component })
+        if (result) {
+          commit('updateProductDetailComponent', { updated_component_obj })
         }
       })
       .catch(err => {
@@ -101,9 +76,8 @@ export const actions = {
   deleteProductDetailComponent ({ commit }, { request_url, target_component_idx }) {
     axios.put(`${request_url || process.env.BASE_URL}/products/${target_component_idx}`)
       .then(result => {
-        const deleted_component = result;
-        if (deleted_component) {
-          commit('deleteProductDetailComponent', { idx: deleted_component.idx });
+        if (result) {
+          commit('deleteProductDetailComponent', { idx: target_component_idx });
         }
       })
       .catch(err => {

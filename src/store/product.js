@@ -47,8 +47,18 @@ export const actions = {
         commit('setNotification', { message: "상품 조회 실패", is_success: false });
       })
   },
+  // 하나만 아이디를 통해 찾는 경우는 없지 않나?
   findProductById({ commit }, { request_url, idx }) {
     axios.get(`${request_url || process.env.BASE_URL}/products/${idx}`)
+      .then(products => {
+        commit('findProducts', { products });
+      })
+      .catch(err => {
+        commit('setNotification', { message: "상품 검색 실패", is_success: false });
+      })
+  },
+  findProducts({ commit }, { request_url, condition_obj }) {
+    axios.get(`${request_url || process.env.BASE_URL}/products/search?$name=${condition_obj.name}`)
       .then(products => {
         commit('findProducts', { products });
       })
